@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 	fieldset{
+    display: inline-block;
+    float: left;
+    width: 300px;
+    margin: 20px 70px;
+    padding: 10px;
+} */
+.labels{
+    float: left;
+    display: inline-block;
+    width: 100px;
+}
+.input{
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+label{
+    display: inline-block;
+    margin: 10px 10px 10px 5px;
+}
+
+input{
+    margin: 10px 0;
+}
+
+.buttons{
+   margin: 0 auto;
+    width: 130px;
+}
+
+</style>
+</head>
+<body>
+	<!-- <fieldset><legend>reg</legend> -->
+		<form action="" method="post" name="register" onsubmit="return validate()">
+	      <div class="labels">
+	          <label for="firstName">First Name</label><br>
+	          <label for="lastName">Last Name</label><br>
+	          <label for="userName">User Name</label><br>
+	          <label for="mail">E-mail:</label><br>
+	          <label for="gender">Gender</label><br>
+	          <label for="pass">Password</label><br>
+	      </div>
+	      <div class="input">
+	          <input id="firstName" name="firstName" type="text"><br>
+	          <input id="lastName" name="lastName" type="text"><br>
+	          <input id="userName" name="userName" type="text"><br>
+	          <input id="mail" name="mail" type="email"><br>
+	          <input id="male" name="gender" type="radio" value="1"><label for="male">Male</label>
+	          <input id="female" name="gender" type="radio" value="2"><label for="female">Female</label><br>
+	          <input id="pass" name="pass" type="password"><br>
+	      </div>
+	      <div class="buttons">
+	          <button type="reset">Reset</button>
+	          <button type="submit" name="register">Register</button>
+	      </div>
+	  </form>
+		
+<!-- 	</fieldset> -->
+
+</body>
+</html>

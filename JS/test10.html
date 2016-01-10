@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<style type="text/css">
+	form label:first-child {
+		width: 150px;
+		display: inline-block;
+	}
+	form > div {
+		padding: 0.3em 0 0 0;
+	}
+	button {
+	margin-left:154px;
+	}
+</style>
+</head>
+<body>
+ 	<form action="" method="post" name="register" onsubmit="return formValidate()">
+ 		<div>
+	 		<label for="firstName">First Name</label>
+	 		<input id="firstName" name="firstName" type="text"><br>
+ 		</div>
+ 		<div>
+	 		<label for="lastName">Last Name</label>
+	 		<input id="lastName" name="lastName" type="text">
+ 		</div>
+ 		<div>
+	 		<label for="userName">User Name</label>
+	 		<input id="userName" name="userName" type="text">
+ 		 </div>
+ 		<div>
+	 		<label for="mail">E-mail:</label>
+	 		<input id="mail" name="mail" type="email">
+ 		</div>
+ 		<div> 
+ 		<label for="gender">Gender</label>
+	 		<input id="male" name="gender" type="radio" value="1"><label for="male">Male</label>
+		    <input id="female" name="gender" type="radio" value="2"><label for="female">Female</label><br>
+	     </div>
+ 		<div>
+ 			<label for="pass">Password</label>
+ 			<input id="pass" name="pass" type="password">
+ 		</div>	
+ 		
+	     <div>
+	      	<label for="countries">Countries</label>
+	      	<select name="countr" onchange="DropDownChanged(this);">
+    <option value="bulgaria">Bulgaria</option>
+    <option value="germany">Garmany </option>
+    <option value="austria">Austia</option>
+    <option value="">Other..</option>
+</select> <input type="text" name="countries" style="display: none;" />
+	      </div> 
+	      <div class="buttons">
+	         <button type="submit" name="register">Submit</button>
+	    </div>
+ 	</form>
+</body>
+<script type="text/javascript" src="js/test10.js"></script>
+</html>
